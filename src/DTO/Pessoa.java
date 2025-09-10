@@ -3,24 +3,23 @@ package DTO;
 
 public class Pessoa {
     
+        
     private String nome;
     private String sobrenome;
     private String telefone;
+    private String CPF;
     private int idade;
     private String email;
     private String CEP;
-    private String CPF;
-    private String RG;
 
-    public Pessoa(String nome, String sobrenome, String telefone, int idade, String email, String CEP, String CPF, String RG) {
+    public Pessoa(String nome, String sobrenome, String telefone, String CPF, int idade, String email, String CEP) {
         this.nome = nome;
         this.sobrenome = sobrenome;
         this.telefone = telefone;
+        this.CPF = CPF;
         this.idade = idade;
         this.email = email;
         this.CEP = CEP;
-        this.CPF = CPF;
-        this.RG = RG;
     }
     
     
@@ -49,6 +48,14 @@ public class Pessoa {
         this.telefone = telefone;
     }
 
+    public String getCPF() {
+        return CPF;
+    }
+
+    public void setCPF(String CPF) {
+        this.CPF = CPF;
+    }
+
     public int getIdade() {
         return idade;
     }
@@ -73,26 +80,11 @@ public class Pessoa {
         this.CEP = CEP;
     }
 
-    public String getCPF() {
-        return CPF;
-    }
-
-    public void setCPF(String CPF) {
-        this.CPF = CPF;
-    }
-
-    public String getRG() {
-        return RG;
-    }
-
-    public void setRG(String RG) {
-        this.RG = RG;
-    }
-
     @Override
     public String toString() {
-        return "Pessoa{" + "nome=" + nome + ", sobrenome=" + sobrenome + ", telefone=" + telefone + ", idade=" + idade + ", email=" + email + ", CEP=" + CEP + ", CPF=" + CPF + ", RG=" + RG + '}';
+        return "Pessoa{" + "nome=" + nome + ", sobrenome=" + sobrenome + ", telefone=" + telefone + ", CPF=" + CPF + ", idade=" + idade + ", email=" + email + ", CEP=" + CEP + '}';
     }
+    
     
     
     
