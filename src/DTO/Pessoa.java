@@ -11,8 +11,9 @@ public class Pessoa {
     private int idade;
     private String email;
     private String CEP;
+    private String RG;
 
-    public Pessoa(String nome, String sobrenome, String telefone, String CPF, int idade, String email, String CEP) {
+    public Pessoa(String nome, String sobrenome, String telefone, String CPF, int idade, String email, String CEP, String RG){
         this.nome = nome;
         this.sobrenome = sobrenome;
         this.telefone = telefone;
@@ -20,6 +21,7 @@ public class Pessoa {
         this.idade = idade;
         this.email = email;
         this.CEP = CEP;
+        this.RG = RG;
     }
     
     
